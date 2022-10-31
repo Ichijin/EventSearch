@@ -1,6 +1,7 @@
 import streamlit as st
 
 uploaded_file = st.file_uploader("アクセスログをアップロードしてください。")
+my_bar = st.progress(0)
 
 import pandas as pd
 if uploaded_file is not None:
